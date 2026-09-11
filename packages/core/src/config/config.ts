@@ -14,6 +14,9 @@ export const HOSTS = {
   portal: 'https://www.sii.cl',
   /** SPA JSON facades (RCV / F29 / F22) live under this host. */
   portalApi: 'https://www4.sii.cl',
+  /** Carpeta Tributaria SPA + `/app/cte-api-carpetatributaria/*` JSON facade. The
+   *  `.sii.cl` session cookie SSO-carries here. (#111) */
+  www2: 'https://www2.sii.cl',
   /** Legacy BHE/BTE consulta CGIs (boletas de honorarios). HTML skeleton filled
    *  client-side from inline JS maps; read via `PortalSession.goto`/`evaluate`, NOT
    *  the SDI-JSON facade. The `.sii.cl` session cookie SSO-carries here (observed
